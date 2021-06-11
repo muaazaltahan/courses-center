@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Courses Center</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">
+                <img src="statics/hm.png" alt="Home">
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="settings.html">
+                <img src="statics/st.png" alt="Settings">
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="user/account.html">
+                <img src="statics/pn.png" alt="Account">
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="user/friends.html">
+                <img src="statics/fr.png" alt="Friends">
+            </a>
+        </div>
+        <div class="nav-item sidebar-btn" onclick="toggleSide()">
+            &equiv;
+        </div>
+    </nav>
+    <div id="sidebar">
+        <form class="search-form">
+            <input type="search" name="search" placeholder="e.g. name of a course">
+            <input type="submit" value="Search">
+        </form>
+        <div class="filters">
+            <div class="specs">
+                <div class="spec">
+                    <input type="checkbox" data-toggle="webdev" onchange="toggleSecSpec(this,this.dataset.toggle)">
+                    Web Development
+                    <ul id="webdev">
+                        <li>
+                            <input type="checkbox">
+                            Front End
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            Back End
+                        </li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <input type="checkbox" data-toggle="infosec" onchange="toggleSecSpec(this,this.dataset.toggle)">
+                    Information Security
+                    <ul id="infosec">
+                        <li>
+                            <input type="checkbox">
+                            cyper Security
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            Networking
+                        </li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <input type="checkbox" data-toggle="sdev" onchange="toggleSecSpec(this,this.dataset.toggle)">
+                    Software Engineering
+                    <ul id="sdev">
+                        <li>
+                            <input type="checkbox">
+                            Mobile Apps
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            Desktop Apps
+                        </li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <input type="checkbox" data-toggle="linux" onchange="toggleSecSpec(this,this.dataset.toggle)">
+                    Linux
+                    <ul id="linux">
+                        <li>
+                            <input type="checkbox">
+                            Starter
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            Advanced
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            Tools
+                        </li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <input type="checkbox">
+                    Other
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <a href="courses/course.html">
+            <div class="course">
+                <div class="course-title">
+                    Course Title
+                </div>
+                <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                <div class="course-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio at vel voluptatem consequuntur sit id doloribus fugit, mollitia consequatur, distinctio eius hic..
+                </div>
+            </div>
+        </a>
+        <a href="courses/course.html">
+            <div class="course">
+                <div class="course-title">
+                    Course Title
+                </div>
+                <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                <div class="course-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio at vel voluptatem consequuntur sit id doloribus fugit, mollitia consequatur, distinctio eius hic..
+                </div>
+            </div>
+        </a>
+        <a href="courses/course.html">
+            <div class="course">
+                <div class="course-title">
+                    Course Title
+                </div>
+                <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                <div class="course-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio at vel voluptatem consequuntur sit id doloribus fugit, mollitia consequatur, distinctio eius hic..
+                </div>
+            </div>
+        </a>
+        <a href="courses/course.html">
+            <div class="course">
+                <div class="course-title">
+                    Course Title
+                </div>
+                <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                <div class="course-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio at vel voluptatem consequuntur sit id doloribus fugit, mollitia consequatur, distinctio eius hic..
+                </div>
+            </div>
+        </a>
+        <a href="courses/course.html">
+            <div class="course">
+                <div class="course-title">
+                    Course Title
+                </div>
+                <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                <div class="course-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio at vel voluptatem consequuntur sit id doloribus fugit, mollitia consequatur, distinctio eius hic..
+                </div>
+            </div>
+        </a>
+        <a href="courses/course.html">
+            <div class="course">
+                <div class="course-title">
+                    Course Title
+                </div>
+                <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                <div class="course-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio at vel voluptatem consequuntur sit id doloribus fugit, mollitia consequatur, distinctio eius hic..
+                </div>
+            </div>
+        </a>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

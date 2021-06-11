@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <title>Settings</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">
+                <img src="statics/hm.png" alt="Home">
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="settings.html">
+                <img src="statics/st.png" alt="Settings">
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="user/account.html">
+                <img src="statics/pn.png" alt="Account">
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="user/friends.html">
+                <img src="statics/fr.png" alt="Friends">
+            </a>
+        </div>
+    </nav>
+    <div class="left-toggle-bar">
+        <button data-toggle="content" data-content="settings/view.html" onclick="toggleContent(this.dataset.toggle,this.dataset.content)">
+            <img src="statics/eye.png" alt="View" title="View">
+        </button>
+        <button data-toggle="content" data-content="settings/privacy.html" onclick="toggleContent(this.dataset.toggle,this.dataset.content)">
+            <img src="statics/sec.png" alt="Privacy" title="Privacy">
+        </button>
+    </div>
+    <div id="content" class="settings">Click On An Icon To Show Settings</div>
+    <script src="js/script.js"></script>
+    <script src="js/setting.js"></script>
+</body>
+</html>

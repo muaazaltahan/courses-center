@@ -1,0 +1,76 @@
+/* This File Is Linked To friends.html Page */
+/* Variables */
+$fsmall: 16px;
+$fmedium: 20px;
+$fbig: 25px;
+
+/* Content */
+.friends{
+    width: 100%;
+    .section{
+        margin: 5px;
+        .friend{
+            width: 100%;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            background: #0005;
+            border-radius: 10px;
+            margin: 10px 0;
+            position: relative;
+            div{
+                padding: 5px 10px;
+            }
+            .f-image{
+                min-width: 100px;
+                max-width: 200px;
+                img{
+                    width: 100%;
+                }
+            }
+            button{
+                position: absolute;
+                left: 5px;
+                top: 5px;
+                background: #22abff;
+                border: 1px solid #fff;
+                border-radius: 10px;
+                color: #fff;
+            }
+            button:hover{
+                background: #22ccff;
+            }
+            button.red{
+                background: #c55555;
+            }
+            button.red:hover{
+                background: #ff5555;
+            }
+        }
+    }
+}
+
+/* Configure For Screens */
+@media screen and (min-width: 500px) {
+    .friends .section .friend button{
+        right: 5px;
+        bottom: 5px;
+        top: unset;
+        left: unset;
+    }
+}
+@media screen and (min-width: 800px) {
+    .friends {
+        overflow: auto;
+        .section{
+            display: flex;
+            flex-wrap: wrap;
+            .friend{
+                width: 47%;
+                margin: 10px;
+            }
+        }
+    }
+}

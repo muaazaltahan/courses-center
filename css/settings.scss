@@ -1,0 +1,114 @@
+/* This File Is Linked To setting.html File */
+/* variables */
+$fsmall: 16px;
+$fmedium: 20px;
+$fbig: 25px;
+
+/* Toggle Bar Of The Left Side */
+.left-toggle-bar{
+    position: fixed;
+    left: 0;
+    top: 43px;
+    height: 100%;
+    width: 43px;
+    background: #787878;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    button{
+        width: 100%;
+        padding: 0;
+        border: none;
+        margin: 5px 0;
+        background: none;
+        img{
+            width: 40px;
+            height: 40px;
+            transition: width 0.2s, height 0.2s;
+        }
+        img:hover{
+            width: 43px;
+            height: 43px;
+        }
+    }
+}
+
+/* Content */
+.settings{
+    background: #0009;
+}
+#content{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 43px;
+    padding-left: 43px;
+    padding-right: 0;
+    height: 100%;
+    overflow: auto;
+    .row{
+        font-size: $fsmall;
+        background: #343434;
+        padding: 5px;
+        text-align: center;
+        color: #fff;
+        margin: 10px auto;
+        button{
+            border-radius: 10px;
+            border: none;
+            padding: 3px;
+            color: #fff;
+        }
+        .choices{
+            height: 0;
+            overflow: auto;
+            transition: height 0.2s;
+            border: 2px inset #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            .theme,.bg,.color{
+                width: 80px;
+                height: 55px;
+                border-radius: 10px;
+                cursor: pointer;
+                float: left;
+                margin: 3px;
+            }
+            .bg{
+                background-size: 100% 100%;
+            }
+            .light{
+                background: #eaeaea;
+                color: #000;
+            }
+            .gray{
+                background: #787878;
+            }
+            .dark{
+                background: #242424;
+            }
+            .blue{
+                background: #0084ff;
+            }
+        }
+    }
+}
+
+/* Configure For Screens */
+@media screen and (min-width: 600px) {
+    #content{
+        width: 90%;
+        height: 80%;
+        border-radius: 20px;
+        top: 50px;
+        .row{
+            width: 90%;
+            border-radius: 15px;
+        }
+    }
+}

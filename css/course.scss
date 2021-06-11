@@ -1,0 +1,117 @@
+/* This File Is Linked To course.html File */
+/* Variables */
+$fsmall: 16px;
+$fmedium: 20px;
+$fbig: 25px;
+
+/* Course Contents */
+.course-title{ 
+    font-size: $fbig;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.course-time{ 
+    font-size: $fmedium;
+}
+.course-requirments{
+    font-size: $fmedium;
+    overflow: hidden;
+    ul{
+        list-style-type: disc;
+        padding: 20px;
+    }
+}
+.course-desc{ 
+    font-size: $fsmall;
+    padding: 10px;
+    overflow: hidden;
+}
+.course-enroll{
+    font-size: $fmedium;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    width: 100%;
+}
+.course-images{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+        width: 200px;
+        padding: 5px;
+    }
+}
+
+/* Course List */
+table{
+    width: 90%;
+    margin: auto;
+    border: 2px outset #fff;
+    background: #9995;
+    border-radius: 16px;
+    tr{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+        padding: 3px;
+        border-bottom: 1px solid #fff;
+        th{
+            font-size: $fmedium;
+        }
+        .limg{
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+        .nm{
+            width: 50%;
+        }
+        .num{
+            min-width: 80px;
+            width: 20%;
+        }
+    }
+}
+
+/* Lesson */
+.lesson-title{
+    width: 100%;
+    font-size: $fbig;
+    text-align: center;
+}
+.lesson-video{
+    width: 100%;
+    text-align: center;
+    video{
+        width: 80%;
+    }
+}
+.lesson-desc{
+    font-size: $fsmall;
+    width: 100%;
+    text-align: center;
+}
+.next{
+    float: right;
+}
+.previous{
+    float: left;
+}
+.next,.previous{
+    background: #2e8b57;
+    color: #fff;
+    padding: 5px;
+    font-size: $fbig;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+.next:hover, .previous:hover{
+    background: #2eab57;
+}

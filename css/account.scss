@@ -1,0 +1,132 @@
+/* This File Is Linked To account.html Page */
+/* Variables */
+$fsmall: 16px;
+$fmedium: 20px;
+$fbig: 25px;
+
+#content.account{
+    width: 100%;
+    text-align: center;
+    .a-image{
+        width: 220px;
+        height: 220px;
+        margin: 10px auto;
+        border-radius: 440px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .camera{
+            position: absolute;
+            top: 50%;
+            height: 110px;
+            width: 220px;
+            background: #0004;
+            transition: opacity 0.35s;
+            opacity: 0;
+            img{
+                width: 70px;
+                height: auto;
+            }
+        }
+    }
+    .a-image:hover{
+        .camera{
+            opacity: 1;
+        }
+    }
+    .a-name{
+        font-size: $fbig;
+    }
+    .a-gender,.a-age,.a-specialization{
+        font-size: $fsmall;
+    }
+    .a-name,.a-age,.a-gender,.a-specialization,.a-desc,.a-friends{
+        padding: 10px;
+        button{
+            background: none;
+            border: 1px solid #000;
+            font-size: inherit;
+            transition: background 0.2s, color 0.2s, border 0.2s;
+            border-radius: 10px;
+        }
+        button:hover{
+            background: #0005;
+            border: 1px solid #fff;
+        }
+    }
+    .dialog{
+        position: fixed;
+        padding: 100px 0;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        border-radius: 10px;
+        background: #0007;
+        overflow: hidden;
+        transition: top 0.35s, left 0.35s, width 0.35s, height 0.35s;
+        color: #fff;
+        .x{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            font-size: 35px;
+            background: none;
+            border: none;
+            color: #fff;
+        }
+        form{
+            margin: 40px auto;
+            input[type="submit"]{
+                border: 1px solid #fff;
+                border-radius: 10px;
+                background: #45bb45;
+                cursor: pointer;
+                font-size: $fmedium;
+                padding: 1px 5px;
+                color: #fff;
+            }
+            input[type="submit"]:hover{
+                background: #45e045;
+            }
+            input[type="file"]{
+                display: none;
+            }
+            input[type="number"]{
+                width: 60px;
+            }
+            .browse{
+                border: 1px solid #fff;
+                border-radius: 10px;
+                background: #45bb45;
+                cursor: pointer;
+                padding: 1px 5px;
+                font-size: $fmedium;
+            }
+            .browse:hover{
+                background: #45e045;
+            }
+        }
+    }
+    .my-courses{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .course{
+            padding: 10px;
+            width: 200px;
+            height: 250px;
+        }
+    }
+}
+/* Configure For Screens */
+@media screen and (min-width: 600px) {
+    #content.account{
+        width: 80%;
+        margin: 0 10%;
+    }
+}

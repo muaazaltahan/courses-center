@@ -1,0 +1,50 @@
+/* This File Is Linked To register.html File */
+/* Variables */
+$fsmall: 16px;
+$fmedium: 20px;
+$fbig: 25px;
+
+/* Toggle Signup Or Login Bar */
+.toggle-bar{
+    width: 100%;
+    overflow: hidden;
+    button{
+        border: 1px solid #fff;
+        font-size: $fmedium;
+        width: 50%;
+        margin: 0;
+        float: left;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}
+
+/* Content */
+#content{
+    width: 100%;
+    text-align: center;
+    form input{
+        width: 200px;
+    }
+    form input[type="submit"]{
+        width: 100%;
+    }
+}
+
+/* Some Text Under The Register Form */
+.invite{
+    font-size: $fbig;
+    text-align: center;
+    padding: 50px 0;
+}
+@media screen and (min-width: 600px) {
+    #content{
+        width: 80%;
+        margin: 0 10%;
+        form input{
+            width: 50%;
+            float: left;
+        }
+    }
+}

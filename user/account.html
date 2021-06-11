@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/account.css">
+    <title>Account</title>
+</head>
+<body>
+    <base href="../">
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">
+                <img src="statics/hm.png" alt="Home">
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="settings.html">
+                <img src="statics/st.png" alt="Settings">
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="user/account.html">
+                <img src="statics/pn.png" alt="Account">
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="user/friends.html">
+                <img src="statics/fr.png" alt="Friends">
+            </a>
+        </div>
+        <div class="nav-item sidebar-btn" onclick="toggleSide()">
+            <a href="user/logout.html">
+                Logout
+            </a>
+        </div>
+    </nav>
+    <div id="content" class="account">
+        <div class="a-image" onclick="showDialog('a-image')">
+            <img src="statics/image2.jpg" alt="Me">
+            <div class="camera">
+                <img src="statics/cm.png" alt="">
+            </div>
+        </div>
+        <div class="dialog" id="a-image">
+            <form>
+                <label for="fileup" class="browse">Browse</label>
+                <input type="file" name="account-image" id="fileup">
+                You Should Put Some Back End Here To Show The Uploaded Image
+                <input type="submit" value="Change">
+            </form>
+            <button class="x" onclick="hideDialog('a-image')">&times;</button>
+        </div>
+        <div class="a-name">
+            Account Name
+            <button onclick="showDialog('a-name')">Change</button>
+        </div>
+        <div class="dialog" id="a-name">
+            <form>
+                <input type="text" maxlength="30" name="account-name">
+                <input type="submit" value="Change">
+            </form>
+            <button class="x" onclick="hideDialog('a-name')">&times;</button>
+        </div>
+        <div class="a-gender">
+            Male
+            <button onclick="showDialog('a-gender')">Change</button>
+        </div>
+        <div class="dialog" id="a-gender">
+            <form>
+                <label for="male">Male</label>
+                <input type="radio" name="account-gender" value="Male" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="account-gender" value="Female" id="female">
+                <label for="other">Other</label>
+                <input type="radio" name="account-gender" value="Other" id="other">
+                <input type="submit" value="Change">
+            </form>
+            <button class="x" onclick="hideDialog('a-gender')">&times;</button>
+        </div>
+        <div class="a-age">
+            17 Years
+            <button onclick="showDialog('a-age')">Change</button>
+        </div>
+        <div class="dialog" id="a-age">
+            <form>
+                <input type="number" name="account-age" id="Age">
+                <label for="age">Years</label>
+                <input type="submit" value="Change">
+            </form>
+            <button class="x" onclick="hideDialog('a-age')">&times;</button>
+        </div>
+        <div class="a-specialization">
+            Front End Development
+            <button onclick="showDialog('a-specialization')">Change</button>
+        </div>
+        <div class="dialog" id="a-specialization">
+            <form>
+                <input type="text" maxlength="80" name="account-specialization">
+                <input type="submit" value="Change">
+            </form>
+            <button class="x" onclick="hideDialog('a-specialization')">&times;</button>
+        </div>
+        <div class="a-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quia corrupti ea corporis enim exercitationem iure fugit nisi sint deleniti necessitatibus officia numquam, quae aliquid reprehenderit ex veniam? Eum, qui.
+            <button onclick="showDialog('a-desc')">Change</button>
+        </div>
+        <div class="dialog" id="a-desc">
+            <form>
+                <input type="text" maxlength="200" name="account-desc">
+                <input type="submit" value="Change">
+            </form>
+            <button class="x" onclick="hideDialog('a-desc')">&times;</button>
+        </div>
+        <div class="a-friends">
+            <a href="otheruser/friends.html">
+                Friends
+            </a>
+        </div>
+        <div class="title">
+            Courses
+        </div>
+        <div class="my-courses">
+            <a href="courses/course.html">
+                <div class="course">
+                    <div class="course-title">
+                        Course Title
+                    </div>
+                    <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                    <div class="course-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                    </div>
+                </div>
+            </a>
+            <a href="courses/course.html">
+                <div class="course">
+                    <div class="course-title">
+                        Course Title
+                    </div>
+                    <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                    <div class="course-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                    </div>
+                </div>
+            </a>
+            <a href="courses/course.html">
+                <div class="course">
+                    <div class="course-title">
+                        Course Title
+                    </div>
+                    <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                    <div class="course-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                    </div>
+                </div>
+            </a>
+            <a href="courses/course.html">
+                <div class="course">
+                    <div class="course-title">
+                        Course Title
+                    </div>
+                    <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                    <div class="course-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                    </div>
+                </div>
+            </a>
+            <a href="courses/course.html">
+                <div class="course">
+                    <div class="course-title">
+                        Course Title
+                    </div>
+                    <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                    <div class="course-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                    </div>
+                </div>
+            </a>
+            <a href="courses/course.html">
+                <div class="course">
+                    <div class="course-title">
+                        Course Title
+                    </div>
+                    <img src="statics/image.jpg" alt="Course Image" class="course-image">
+                    <div class="course-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/account.js"></script>
+</body>
+</html>

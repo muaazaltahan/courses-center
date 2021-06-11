@@ -1,0 +1,137 @@
+/* This File Is Linked To All Html Files */
+
+/* Variables */
+$fsmall: 16px;
+$fmedium: 20px;
+$fbig: 25px;
+
+/* Defaults */
+@font-face {
+    font-family: glacialindifference;
+    src: url('../statics/glacialindifference.otf');
+}
+*{
+    font-family: glacialindifference;
+    box-sizing: border-box;
+    transition: background 0.4s;
+}
+body{
+    padding: 50px 0;
+    background-color: #e0e0e0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ul{
+    list-style: none;
+    padding: 5px 15px;
+    margin: 0;
+}
+a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+}
+
+/* Navigation Links */
+nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff8;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 43px;
+    z-index: 9;
+    .nav-item{
+        float: left;
+        padding: 3px;
+        img{
+            width: 35px;
+            height: 35px;
+            transition: height 0.2s, width 0.2s;
+        }
+        img:hover{
+            width: 38px;
+            height: 38px;
+        }
+    }
+    .sidebar-btn{
+        position: absolute;
+        right: 0;
+        font-size: $fbig;
+        font-weight: bold;
+        cursor: pointer;
+        height: 100%;
+        padding: 5px 10px;
+    }
+    .sidebar-btn:hover{
+        background: #0005;
+    }
+}
+
+/* Title */
+.title{
+    width: 100%;
+    background: #f32b;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+}
+
+/* Courses */
+#content{
+    width: 100%;
+    float: left;
+    padding: 5px;
+    transition: width 0.2s;
+    .course{
+        border: 1px solid #000;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px #000;
+        background: #0002;
+        padding: 5px;
+        cursor: pointer;
+        .course-title{
+            font-size: $fbig;
+        }
+        .course-image{
+            width: 70%;
+            margin: 5px 15%;
+            max-height: 200px;
+        }
+        .course-desc{
+            font-size: $fmedium;
+        }
+    }
+}
+
+/* Buttons */
+.btn{
+    background:#55f7;
+}
+.btn:hover{
+    background: #55ff;
+}
+
+/* Screen Configure */
+@media screen and (min-width: 1000px) {
+    #content{
+        .course{
+            float: left;
+            width: 30%;
+            position: relative;
+            margin: 5px;
+            height: 360px;
+            overflow: hidden;
+        }
+        .course:hover{
+            background: #0004;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+<div class="row">
+    Advice
+    <button class="btn" data-slide="advice" onclick="toggleSlide(this.dataset.slide);changeText(this)">
+        Show
+    </button>
+    <div class="choices" id="advice">
+        Try to chose a clear view. If you chose dark view and dark font color you wont be able to see the content. 
+    </div>
+</div>
+<div class="row">
+    Theme
+    <button class="btn" data-slide="themes" onclick="toggleSlide(this.dataset.slide);changeText(this)">
+        Show
+    </button>
+    <div class="choices" id="themes">
+        <div class="theme light" data-theme="light" onclick="changeTheme(this.dataset.theme)">
+            Light
+        </div>
+        <div class="theme gray" data-theme="gray" onclick="changeTheme(this.dataset.theme)">
+            Default (Gray)
+        </div>
+        <div class="theme dark" data-theme="dark" onclick="changeTheme(this.dataset.theme)">
+            Dark
+        </div>
+        <div class="theme blue" data-theme="blue" onclick="changeTheme(this.dataset.theme)">
+            Blue
+        </div>
+    </div>
+</div>
+<div class="row">
+    Background
+    <button class="btn" data-slide="backgrounds" onclick="toggleSlide(this.dataset.slide);changeText(this)">
+        Show
+    </button>
+    <div class="choices" id="backgrounds">
+        <div class="bg" data-bg="statics/bg1.jpg" onclick="changeBg(this.dataset.bg)"></div>
+        <div class="bg" data-bg="statics/bg2.jpg" onclick="changeBg(this.dataset.bg)"></div>
+        <div class="bg" data-bg="statics/bg3.jpg" onclick="changeBg(this.dataset.bg)"></div>
+        <div class="bg" data-bg="statics/bg4.jpg" onclick="changeBg(this.dataset.bg)"></div>
+        <div class="bg" data-bg="statics/bg5.jpg" onclick="changeBg(this.dataset.bg)"></div>
+    </div>
+    <script src="js/settings.js"></script>
+</div>
+<div class="row">
+    Main Font Color:
+    <button class="btn" data-slide="color" onclick="toggleSlide(this.dataset.slide);changeText(this)">
+        Show
+    </button>
+    <div class="choices" id="color">
+        <div class="color light" data-color="#fefefe" onclick="changeColor(this.dataset.color)"></div>
+        <div class="color dark" data-color="#151515" onclick="changeColor(this.dataset.color)"></div>
+    </div>
+    <script src="js/settings.js"></script>
+</div>

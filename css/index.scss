@@ -1,0 +1,57 @@
+/* This File Is Linked To index.html Page */
+/* Variables */
+$fsmall: 16px;
+
+/* Sidebar */
+#sidebar{
+    position: fixed;
+    left: 100%;
+    height: 100%;
+    width: 90%;
+    top: 43px;
+    background: #999;
+    transition: left 0.2s, width 0.2s;
+    padding: 5px;
+    .search-form{
+        text-align: center;
+        input{
+            height: 30px;
+            font-size: $fsmall;
+            border-radius: 10px;
+        }
+        input[type="search"]{
+            width: 100%;
+        }
+        input[type="submit"]{
+            width: 50%;
+            cursor: pointer;
+        }
+        input:hover{
+            background: #0003;
+            color: #fff;
+        }
+    }
+    .specs{
+        height: 250px;
+        overflow: scroll;
+        border: 2px inset #fff;
+        .spec{
+            font-size: $fsmall;
+            ul{
+                display: none;
+            }
+        }
+    }
+}
+
+/* Screen Configure */
+@media screen and (min-width: 501px){
+    #sidebar{
+        width: 30%;
+    }
+}
+@media screen and (min-width: 1000px){
+    #sidebar{
+        width: 15%;
+    }
+}
